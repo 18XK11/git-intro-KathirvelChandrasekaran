@@ -20,4 +20,9 @@ public class HelloWorldController {
     public ResponseEntity<String> printWithName(@PathVariable String name){
         return new ResponseEntity<String>("Hello "+name, HttpStatus.OK);
     }
+
+    @GetMapping("commit")
+    public ResponseEntity<String> printWithName(){
+        return new ResponseEntity<String>("Changed the repo visibility ", HttpStatus.OK);
+    }
 }
