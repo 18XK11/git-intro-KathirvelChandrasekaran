@@ -23,6 +23,6 @@ public class HelloWorldController {
 
     @GetMapping("commit")
     public ResponseEntity<String> printWithName(){
-        return new ResponseEntity<String>("Changed the repo visibility ", HttpStatus.OK);
+        return new ResponseEntity<String>("Changed the repo visibility to public ", HttpStatus.OK);
     }
 }
